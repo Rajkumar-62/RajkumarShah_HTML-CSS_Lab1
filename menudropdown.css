@@ -1,0 +1,76 @@
+body {
+    height: auto;
+    margin: 0%;
+}
+
+header h1 {
+    background-color: red;
+    margin: 0%;
+    padding: 20px;
+    text-align: center;
+}
+
+#navigate{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.menu{
+    margin: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menu li:nth-child(1):hover #dropdownlink1,
+.menu li:nth-child(2):hover #dropdownlink2,
+.menu li:nth-child(3):hover #dropdownlink3 {
+    display: block;
+    background-color: aquamarine;
+}
+
+#dropdownlink1,
+#dropdownlink2,   
+#dropdownlink3 {
+display: none;
+position: absolute;
+width: auto;
+padding: 0%;
+top: 42px;
+background-color: whitesmoke;
+max-width: 150px;
+
+}
+
+#dropdownlink1 li,
+#dropdownlink2 li,   
+#dropdownlink3 li {
+display: block;
+}
+
+#dropdownlink1 li:hover,
+#dropdownlink2 li:hover,
+#dropdownlink3 li:hover {
+    background-color: gainsboro;
+}
+
+#dropdownlink1 li a,
+#dropdownlink2 li a,
+#dropdownlink3 li a {
+    color: steelblue;
+    font-size: 16px;
+}
